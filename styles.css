@@ -35,6 +35,48 @@
     border-radius: 100%;
     display: none;
 }
+
+.MainSection_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: calc(60vh -  65px);
+}
+.MainSection_logo_container{
+    width: 200px;
+    height: 40px;
+} 
+.MainSection_head_container{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 350;
+}
+.MainSection_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.MainSection_input_location ,.MainSection_input_search{
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.MainSection_input_location {
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+.MainSection_input_search {
+    width: 65%;
+}
+
 @media only screen and (max-width: 600px){
     .navbar_menu_container .User_icon{
         display: flex;
@@ -45,4 +87,65 @@
     .MainSection{
         min-height: 80vh;
     }
+    .MainSection_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .MainSection_input_search,
+    .MainSection_input_location{
+        padding: 18px;
+        border-radius: 10px;
+        width: 98%;
+
+    }
+    .MainSection_container{
+        height:calc(80vh - 40px) ;
+    }
+    .MainSection_head_container{
+        font-size: 18px;
+        width: 95%;
+    }
+
+}
+.container{
+    margin: 3rem auto;
+    width: 90%;
+    display: flex;
+   flex-wrap: wrap;
+}
+.free_offer{
+   /* display: flex;
+   flex-wrap: wrap; */
+   gap: 0.5rem;
+   align-items: center;
+   justify-content: center; 
+}
+.free_offer_container_card{
+    border-radius: 10px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition:all 0.3s ease-in-out;
+    margin-right: 12px;
+    
+}
+.free_offer_container_card:hover{
+    transform: scale(1.1);
+}
+.free_offer_container_card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+.free_offer_container_card_div{
+    padding: 10px;
+}
+.free_offer_container_card_head{
+  font-size: 20px;
+  font-weight: 400;
+}
+.free_offer_container_card_para{
+    font-size: 12.5px;
 }
