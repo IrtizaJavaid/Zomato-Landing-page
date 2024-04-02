@@ -64,6 +64,7 @@
     width: 50%;
     border-radius: 10px;
 }
+
 .MainSection_input_location ,.MainSection_input_search{
   padding: 5px;
   border: none;
@@ -357,6 +358,39 @@
         width: 95%;
         flex-direction: column;
     }
+}
+.explore_section{
+    width: 90%;
+    /* background-color: red; */
+    margin: 3rem auto;
+    height: 350px;
+}
+.explore_section h1{
+ text-align: center;
+}
+.explore_section_div{
+   width: 60%;
+   /* background-color: blue; */
+   position: relative;
+   left: 400px;
+   margin-top: 25px;
+}
+.explore_div{
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 15px;
+}
+.dropdown1{
+    position: relative;
+    left: 400px;
+}
+.dropdown2{
+    position: relative;
+    left: 325px;
+}
+.dropdown3{
+    position: relative;
+    left: 450px;
 }
 
 .footer{
